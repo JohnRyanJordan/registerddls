@@ -62,12 +62,24 @@ CREATE INDEX ix_employee_lastName
 
 INSERT INTO employee VALUES (
        uuid_generate_v4()
-     , 'Ryan'
-     , 'Jordan'
+     , 'John'
+     , 'Doe'
      , DEFAULT
      , TRUE
      , 'Developer'
      , NULL
      , 12345
+     , current_timestamp
+);
+
+INSERT INTO employee VALUES (
+       uuid_generate_v4()
+     , 'Jane'
+     , 'Smith'
+     , DEFAULT
+     , TRUE
+     , 'CEO'
+     , NULL
+     , 54321
      , current_timestamp
 );
